@@ -3,36 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TechBridge Technologies</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+.aa{
+    color:rgb(7, 113, 146)
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 1;
+    padding: 100px;
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding:120px;
+}
+#a{
+    color: rgb(28, 85, 85);
+}
+#b{
+    color:rgb(236, 143, 208);
+}
+#c{
+    color:rgb(28, 85, 85);
+}
+#d{
+    border-radius:20px;
+    background-color: rgb(4, 81, 133);
+padding:10px;
+width:150px;
+color:white;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#aaa{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(43, 42, 42);
+    text-align: center;
+}
+.carousel-cell {
+    width: 100%;
+    }
+
+    /* cell number */
+    .carousel-cell:before {
+      display: block;
+      width:100px;
+    }
+    .i{
+       
+   padding:20px;
+        
+    }
+    #p1{
+    text-align: center;
+    }
+    .containerr{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+    .footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+#k{
+    position: absolute;
+            top: 50px;  /* Adjust the top position */
+            left: 100px; /* Adjust the left position */
+        
+            height: auto;
+            border-radius: 50%;
+}
+    </style>
 </head>
 <body>
+    
+    
     <header>
         <nav id="navbar">
-            <button class="menu-toggle">☰</button>
-            <ul class="menu">
+           
+            <ul> 
+               
                 <li><a href="contactus.html">Contact Us</a></li>
                 <li><a href="carrers.html">Careers</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="index.html">Home</a></li>
-                <li><img src="tt6.jpg" width="80px" height="80px" id="k"></li>
+                <li> <img src="tt6.jpg" width="80px" height="80px" id="k"></li>
+               
             </ul>
         </nav>
     </header>
-
+    
     <div class="container">
         <div class="content">
             <h1>We'r<span id="a"> Developers</span><span id="b">Designer's</span><span id="c">Tester's</span></h1>
-            <p>Your trusted partner in IT services and solutions. With a passion for technology and a commitment to excellence, we have been providing cutting-edge IT services to businesses.</p>
-            <button id="d">Get Started</button>
+            <p>Your trusted partner in IT services and solutions. With a passion for technology and a commitment to excellence, we have been providing cutting-edge IT services to business.</p>
+            <button id="d"> Get Started</button>
         </div>
         <div class="image">
             <img src="t1.jpg" alt="Right Side Image">
         </div>
+       
     </div>
     <div class="container">
         <div class="image">
@@ -40,68 +211,85 @@
         </div>
         <div class="content">
             <ul>
-                <li>We Design product requirements from clients considering time and budget constraints, design modularity and product robustness. We have a proven methodology. We’ve developed and refined our methods over many years, so you can expect our services and projects to be delivered consistently. Our numerous years of experience have always made us aware and considerate in putting our best foot forward during the work process so our clients can get the best. We listen, suggest, and update. We understand that although there are common themes, each business is different and has its own special needs. We are providing reliable and user-friendly services, maintenance, updating, repairs, and fix issues in software.</li>
-                <li>We prioritize your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.</li>
-            </ul>
+           <li> We Design product requirements from clients considering time and budget Constraints, Design modularity and product robustness.
+            We have a proven methodology, We’ve developed and refined our methods over many years, so you can expect our services and projects to be delivered consistently. Our numerous years of experience have always made us aware and considerate in putting our best foot forward during the work process so our clients can get the best.
+            We listen, suggest, and update. We understand that although there are common themes, each business is different and has its own special needs.
+            We are providing reliable and user friendly services, maintenance, updating, repairs and fix issues in software.</p>
+    </li>
+       <li> We prioritise your satisfaction and work closely with you to understand your specific needs, ensuring that our services are tailored to your requirements.
+    </li>
+    </ul>
         </div>
+        
+    </div>
+    <h1 id="aaa">What Client Says</h1>
+   
+    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
+      <div class="carousel-cell">
+        <img class="i" src="t33.png" height="600px" width="800px">
+
+    <p id="p1"> We are truly deligated to collaborate with the team.their exceptional expertise and professionalism have truly distinguished them.</p>  
+    </div>
+      <div class="carousel-cell">
+        <img class="i" src="t44.webp" height="600px" width="800px">
+        <p id="p1"> We've just finished a website redeisgn,reasonably priced.Now boating a sleek,modern design,we anticipate incresed business engagement.</p>
+      </div>
+      <div class="carousel-cell">
+        <img class="i" src="t5.png" height="400px" width="500px">
+        <p id="p1"> From the inaugral consultation,TechBridge adeptly discerned our requirements,delivering professionals-</p>
+      </div>
     </div>
 
-    <h1 id="aaa">What Client Says</h1>
-    <div class="carousel" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-        <div class="carousel-cell">
-            <img class="i" src="t33.png" alt="Client Testimonial Image 1">
-            <p id="p1">We are truly delighted to collaborate with the team. Their exceptional expertise and professionalism have truly distinguished them.</p>
-        </div>
-        <div class="carousel-cell">
-            <img class="i" src="t44.webp" alt="Client Testimonial Image 2">
-            <p id="p1">We've just finished a website redesign, reasonably priced. Now boasting a sleek, modern design, we anticipate increased business engagement.</p>
-        </div>
-        <div class="carousel-cell">
-            <img class="i" src="t5.png" alt="Client Testimonial Image 3">
-            <p id="p1">From the inaugural consultation, TechBridge adeptly discerned our requirements, delivering professionalism.</p>
-        </div>
-    </div>
 
     <footer class="footer">
         <div class="containerr">
-            <div class="row">
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Our Services</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Get Help</h4>
-                    <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">+Phone Number</a></li>
-                        <li><a href="#">Email ID</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/twitt_login"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
-                        <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
+          <div class="row">
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">+phone number</a></li>
+                    <li><a href="#">email id</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/twitt_login"><i class="fab fa-twitter"></i></a>
+                
+                    <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
+          </div>
         </div>
-    </footer>
+     </footer>
+   
+
+
+
 
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
