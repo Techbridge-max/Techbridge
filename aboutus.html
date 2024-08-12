@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+      .containerr{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+     .footer{
+	background-color: #24262b;
+    padding: 120px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+#tt{
+    padding:20px;
+    margin:10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#t{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color:rgb(6, 131, 159);
+    font-size:30px;
+    
+}
+#im{
+    margin:10px;
+}
+#aaa{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    font-weight: 600;
+    margin:10px;
+    padding:10px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex: 1;
+    padding: 100px;
+}
+#u{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: circle;
+}
+#d{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.dd{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding:5px;
+    margin:10px;
+    background-color: rgb(225, 244, 244);
+}
+.ddd{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding:5px;
+    margin:10px;
+    background-color: rgb(158, 162, 162); 
+}
+.dddd{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding:5px;
+    margin:10px;
+    background-color: rgb(207, 252, 252);
+}
+#h{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#k{
+    position: absolute;
+            top: 50px;  /* Adjust the top position */
+            left: 100px; /* Adjust the left position */
+        
+            height: auto;
+            border-radius: 50%;
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <ul> 
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="carrers.html">Careers</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li> <img src="tt6.jpg" width="80px" height="80px" id="k"></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <img src="https://cdn8.bigcommerce.com/s-9eyx0j794u/product_images/uploaded_images/receprion1.jpg" height="500px" width="1500px" id="im">
+        <p id="tt"> Welcome to <span id="t"> Techbridge Technology</span> where innovation meets excellence in software development. Founded in [Year], we are a passionate team of tech enthusiasts dedicated to transforming ideas into cutting-edge solutions. Our headquarters are based in [Location], but our impact spans globally through our diverse range of products and services.
+        </p>
+        <p id="tt">Our expertise spans across [list key areas such as custom software development, cloud solutions, AI, data analytics, etc.], enabling us to deliver solutions that are tailored to meet your unique needs.</p>
+        <p id="tt">Innovating Tomorrow’s Solutions Today
+            Empowering Your Business with Cutting-Edge Software Solutions
+            At  <span id="t"> Techbridge Technology</span>, we’re dedicated to transforming how businesses operate and thrive through innovative software solutions.</p>
+    </div>
+    <h1 id="aaa">"Your vision, our technology – let's build the future together".</h1>
+    <div class="container">
+        <div class="content">
+            
+            <img src="https://i.pinimg.com/originals/b6/61/f0/b661f069b6ca5b99483134142206f267.jpg" height="400px" width="500px">
+           
+        </div>
+       
+        <div class="content">
+            
+            <p id="d">
+                What sets us apart is our commitment to excellence and our unwavering focus on delivering results that exceed expectations. Our extensive industry knowledge combined with innovative approaches allows us to tailor solutions that address your unique needs and challenges.</p>
+<ul id="u">
+
+
+                <li>Proven Expertise</li>
+                
+               <li> Industry Insights</li>
+                
+                <li>Time-Tested Solutions</li>
+                
+                <li>Reliable Partner</li>
+                </ul>   
+            
+               
+            </div>
+
+           
+    </div>
+    <div class="dd">
+      <h2 id="h">  Our vision</h2>
+      <p>Innovation: We are committed to pushing the boundaries of technology to deliver cutting-edge solutions.
+        Integrity: We uphold the highest standards of transparency and ethics in all our interactions.
+        </p>
+    </div>
+    <div class="ddd">
+        <h2 id="h"> Our Mission</h2>
+        <p> At  <span id="t"> Techbridge Technology</span>, our mission is to empower businesses and individuals with transformative software solutions that drive success and efficiency. We believe in harnessing the power of technology to simplify complex processes, enhance user experiences, and enable our clients to achieve their goals with ease.
+        </p>
+    </div>
+    <div class="dddd">
+        <h2 id="h" >Our Team</h2>
+        <p>Our team is our greatest asset. Comprised of talented developers, visionary designers, and strategic thinkers, we bring a wealth of experience and expertise to every project. We foster a culture of continuous learning and collaboration, ensuring that our team stays at the forefront of industry trends and technologies.
+        </p>
+    </div>
+
+    <footer class="footer">
+        <div class="containerr">
+          <div class="row">
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Carrers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">+phone number</a></li>
+                    <li><a href="#">email id</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/twitt_login"><i class="fab fa-twitter"></i></a>
+                
+                    <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+          </div>
+        </div>
+     </footer>
+   
+     <script src="script.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
