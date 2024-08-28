@@ -3,320 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-<style>
-      .containerr{
-	max-width: 1170px;
-	margin:auto;
-}
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-ul{
-	list-style: none;
-}
-     .footer{
-	background-color: #24262b;
-    padding: 120px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-	font-size: 18px;
-	color: #ffffff;
-	text-transform: capitalize;
-	margin-bottom: 35px;
-	font-weight: 500;
-	position: relative;
-}
-.footer-col h4::before{
-	content: '';
-	position: absolute;
-	left:0;
-	bottom: -10px;
-	background-color: #e91e63;
-	height: 2px;
-	box-sizing: border-box;
-	width: 50px;
-}
-.footer-col ul li:not(:last-child){
-	margin-bottom: 10px;
-}
-.footer-col ul li a{
-	font-size: 16px;
-	text-transform: capitalize;
-	color: #ffffff;
-	text-decoration: none;
-	font-weight: 300;
-	color: #bbbbbb;
-	display: block;
-	transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-	color: #ffffff;
-	padding-left: 8px;
-}
-.footer-col .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
-	text-align: center;
-	line-height: 40px;
-	border-radius: 50%;
-	color: #ffffff;
-	transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-	color: #24262b;
-	background-color: #ffffff;
-}
-
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
-#k{
-    position: absolute;
-            top: 50px;  /* Adjust the top position */
-            left: 100px; /* Adjust the left position */
-        
-            height: auto;
-            border-radius: 50%;
-}
-.container {
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Our Services - Tech Bridge</title>
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            background: #fff;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed; /* Fix the header at the top */
+            top: 0;
+            width: 100%; /* Make sure it spans the full width */
+            z-index: 1000; /* Ensure it stays on top of other content */
+        }
+        header h1 {
+            margin: 0;
+        }
+        .logo img {
+            width: 70px;
+        }
+        nav {
             display: flex;
-            width: 100%;
-            height: 100vh;
-            padding:100px;
-            border:50px;
-            font-size: 20px;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
         }
-
-        .content {
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            color: #000;
+            font-family: 'DM Sans', sans-serif;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .nav-links a:hover {
+            background-color: #00a8ff;
+            border-radius: 5px;
+        }
+        .hero {
+            background-color: #003d7c; /* Blue background */
+            color: white;
+            padding: 50px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left; /* Align text to the left */
+        }
+        .hero-content {
             flex: 1;
-            padding: 20px;
-           
-            box-sizing: border-box;
+            max-width: 50%;
+            padding-right: 20px;
         }
-        #t{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color:rgb(6, 131, 159);
-    font-size:30px;
-    
-}
-#tb{
-    border-radius: 50%;
-    padding:50px;
-
-}
-#hh{
-    font-family: Arial, Helvetica, sans-serif;
-    color:rgb(1, 47, 61);
-}
-.contentt{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border-radius:40px;
-    background-color: rgb(6, 159, 159);
-    padding:50px;
-    margin: 50px;
-    height:300px;
-    width:500px;
-}
-
-
-#tt{
-   
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(2, 106, 104);
-}
-#ttt{
-    text-align: center;
-}
-</style>
+        .hero-content h2 {
+            margin: 0;
+            font-size: 2.5rem; /* Adjust as needed */
+        }
+        .hero-content p {
+            margin-top: 10px;
+            font-size: 1.2rem; /* Adjust as needed */
+        }
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .services-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            justify-content: center;
+        }
+        .service-card {
+            margin: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start with a slight offset */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+        }
+        .service-card.visible {
+            opacity: 1;
+            transform: translateY(0); /* Move to original position */
+        }
+        .service-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .content-image img {
+            width: 300px; /* Set the width to 1000px */
+            height: auto; /* Set the height to 667px */
+            max-width: 100%; /* Ensure the image doesn't exceed container width */
+        }
+        .content-text h3 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .content-text p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .content-text ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-text ul li {
+            margin: 5px 0;
+            font-size: 16px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .content-text ul li:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #003d7c;
+        }
+        .service-card img {
+            width: 500px; /* Set the width to 1000px */
+            height: 500px; /* Set the height to 667px */
+            object-fit: cover; /* Ensure the image covers the area without distortion */
+        }
+        .service-card .content {
+            padding: 20px;
+        }
+        .service-card h3 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .service-card p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .service-card ul li {
+            margin: 5px 0;
+            font-size: 16px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .service-card ul li:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #003d7c;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003d7c;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
-        <nav id="navbar">
-            <ul> 
-                <li><a href="contactus.html">Contact Us</a></li>
-                <li><a href="carrers.html">Careers</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo11.png" alt="TechBridge Logo"></a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li> <img src="tt6.jpg" width="80px" height="80px" id="k"></li>
-               
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="technologies.html">Technologies</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-
-    
-   
-    <div class="container">
-        <div class="content">
-            
-            <p class="d">
-                
-                Welcome to  <span id="t"> Techbridge Technology</span>  – Innovating Tomorrow’s Solutions Today
-                Empowering Your Business with Cutting-Edge Software Solutions
-                At  <span id="t"> Techbridge Technology</span> , we’re dedicated to transforming how businesses operate and thrive through innovative software solutions. Our expertise spans across [list key areas such as custom software development, cloud solutions, AI, data analytics, etc.], enabling us to deliver solutions that are tailored to meet your unique needs.
-                </p>
-                </div>
-        <div class="content">
-            
-          <img src="tt4.png" width="600px" height="500" id="tb">
-               
-                
-               
-            </div>
-
-           
-    </div>
-   
-            
-            <div class="container">
-                <div class="content">
-                    
-                    <img src="tt5.png" width="600px" height="500" id="tb">
-                       </div>
-                <div class="content">
-                    <h2 id="hh">
-                        We Provide Awesome Services For You
-                    </h2>
-                    
-                 <p> "Elevate Your Experience with Our Services – Your Success, Our Priority!"</p>
-                       
-                        
-                       
-                    </div>
-        
-                   
-            </div>
-                
-               
-            </div>
-
-           
-    </div>
-
-
-    <h2 id="ttt"><b>Wt<span id="tt"> We</span> Do</b></h2>
-    <div class="container">
-        <div class="contentt">
-            
-           
-          <h3> Custom Software Development</h3>
-<p>Crafting solutions that are as unique as your business. From concept to deployment, our team delivers custom software that drives growth and efficiency.</p>
-
-
-               </div>
-        <div class="contentt">
-           <h3> Cloud Solutions</h3>
-           <p> Harness the power of the cloud with our secure, scalable, and cost-effective cloud services designed to optimize your operations and data management.</p>
-            
-            
-         
-               
-                
-               
-            </div>
-
-           
-    </div>
-        
-       
-    </div>
-
-   
-</div>
-
-<div class="container">
-    <div class="contentt">
-        
-        <h3>AI & Machine Learning</h3>
-        <p>Leverage advanced AI and machine learning technologies to gain actionable insights, automate processes, and enhance decision-making.</p>
-        
-        
-
-           </div>
-    <div class="contentt">
-        <h3>Data Analytics</h3>
-       <p> Transform raw data into strategic assets. Our analytics services provide you with the tools to make informed decisions and uncover new opportunities.</p>
-        </div> 
-</div>
-</div>
-
-
-</div>
-
-
-
-
-    <footer class="footer">
-        <div class="containerr">
-          <div class="row">
-            <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">our services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Carrers</a></li>
-                    <li><a href="#">Contact Us</a></li>
-
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>get help</h4>
-                <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">+phone number</a></li>
-                    <li><a href="#">email id</a></li>
-                    
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    
-                </ul>
-            </div>
-            
-            <div class="footer-col">
-                <h4>follow us</h4>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://x.com/twitt_login"><i class="fab fa-twitter"></i></a>
-                
-                    <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fab fa-instagram"></i></a>
-                    <a href="https://in.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-          </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Services</h2>
+            <p>We build a strong foundation for cognitive business by working with complex technologies to offer project performance optimization. From design to development, we take a balanced approach to provide you with world-class IT solutions. We believe in precision and quality from start to finish.</p>
         </div>
-     </footer>
-   
-     <script src="script.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <div class="hero-image">
+            <img src="icons/ourservices.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of Mobile App Development Services</h3>
+                    <p>Accelerate your business growth with our astounding mobile app development services. From B2B to B2C apps for small businesses, our experts have a proven record of creating robust and engaging mobile apps with Native and Hybrid technologies for iOS and Android.</p>
+                    <ul>
+                        <li>iPhone App Development</li>
+                        <li>iPad App Development</li>
+                        <li>Swift App Development</li>
+                        <li>Android App Development</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/mads.png" alt="Mobile App Development">
+                </div>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of Website Development Services</h3>
+                    <p>Break away from the ordinary with our custom software development services. Become technologically superior in the industrial domain with our next-generation automated software solutions, empowering your business goals.</p>
+                    <ul>
+                        <li>PHP Development</li>
+                        <li>Laravel Development</li>
+                        <li>Node.js Development</li>
+                        <li>Cake PHP Development</li>
+                        <li>Django Web Developers</li>
+                        <li>Angular Development</li>
+                        <li>WordPress Development</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/wds.png" alt="Website Development">
+                </div>
+            </div>
+        </div>
+    
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of UI/UX Design</h3>
+                    <p>Get a noticeable digital presence with our UI/UX Designs. We turn great ideas into meaningful interfaces with superb user-centric design practices.</p>
+                    <ul>
+                        <li>Customized Web Design Services</li>
+                        <li>Interface Design for Mobile App</li>
+                        <li>Front End Development</li>
+                        <li>Web Design Services</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/uiux.png" alt="UI/UX Design">
+                </div>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of Digital Marketing Services</h3>
+                    <p>Our digital marketing services will take your brand to new heights with our extensive solutions, including SEO, SEM, and Social Media Marketing.</p>
+                    <ul>
+                        <li>Social Media Marketing</li>
+                        <li>Search Engine Optimization</li>
+                        <li>Pay Per Click Advertising</li>
+                        <li>Email Marketing</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/dms.png" alt="Digital Marketing">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tech Bridge. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceCards = document.querySelectorAll('.service-card');
+            const windowHeight = window.innerHeight;
+
+            const revealCards = () => {
+                serviceCards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    if (cardTop < windowHeight - 150) { // Adjust the offset as needed
+                        card.classList.add('visible');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', revealCards);
+            revealCards(); // Initial check in case cards are already in view
+        });
+    </script>
 </body>
 </html>
