@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Our Services - Tech Bridge</title>
+    <style>
+        body {
+            font-family: 'DM Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        header {
+            background: #fff;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed; /* Fix the header at the top */
+            top: 0;
+            width: 100%; /* Make sure it spans the full width */
+            z-index: 1000; /* Ensure it stays on top of other content */
+        }
+        header h1 {
+            margin: 0;
+        }
+        .logo img {
+            width: 70px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li {
+            display: inline;
+        }
+        .nav-links a {
+            color: #000;
+            font-family: 'DM Sans', sans-serif;
+            text-decoration: none;
+            padding: 5px 10px;
+        }
+        .nav-links a:hover {
+            background-color: #00a8ff;
+            border-radius: 5px;
+        }
+        .hero {
+            background-color: #003d7c; /* Blue background */
+            color: white;
+            padding: 50px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align: left; /* Align text to the left */
+        }
+        .hero-content {
+            flex: 1;
+            max-width: 50%;
+            padding-right: 20px;
+        }
+        .hero-content h2 {
+            margin: 0;
+            font-size: 2.5rem; /* Adjust as needed */
+        }
+        .hero-content p {
+            margin-top: 10px;
+            font-size: 1.2rem; /* Adjust as needed */
+        }
+        .hero-image img {
+    width: 400px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed container width */
+}
+        .services-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            justify-content: center;
+        }
+        .service-card {
+            margin: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            opacity: 0; /* Start hidden */
+            transform: translateY(20px); /* Start with a slight offset */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+        }
+        .service-card.visible {
+            opacity: 1;
+            transform: translateY(0); /* Move to original position */
+        }
+        .service-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content-text {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .content-image img {
+    width: 400px; /* Reduced width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the image doesn't exceed container width */
+}
+        .content-text h3 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .content-text p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .content-text ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-text ul li {
+            margin: 5px 0;
+            font-size: 16px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .content-text ul li:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #003d7c;
+        }
+        .service-card img {
+    width: 400px; /* Reduced width */
+    height: 300px; /* Reduced height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    max-width: 100%; /* Ensure the image doesn't exceed container width */
+}
+        .service-card .content {
+            padding: 20px;
+        }
+        .service-card h3 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+        .service-card p {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .service-card ul li {
+            margin: 5px 0;
+            font-size: 16px;
+            position: relative;
+            padding-left: 20px;
+        }
+        .service-card ul li:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #003d7c;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003d7c;
+            color: white;
+        }
+        @keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero {
+    animation: slideIn 1s ease-out;
+}
+.footer {
+    background-color: #003d7c; /* Background color */
+    color: #ffffff; /* Text color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #6abf40; /* Icon color */
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo11.png" alt="TechBridge Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="technologies.html">Technologies</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Our Services</h2>
+            <p>We build a strong foundation for cognitive business by working with complex technologies to offer project performance optimization. From design to development, we take a balanced approach to provide you with world-class IT solutions. We believe in precision and quality from start to finish.</p>
+        </div>
+        <div class="hero-image">
+            <img src="icons/ourservices.png" alt="Hero Image">
+        </div>
+    </section>
+
+    <section class="services-section">
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of Mobile App Development Services</h3>
+                    <p>Accelerate your business growth with our astounding mobile app development services. From B2B to B2C apps for small businesses, our experts have a proven record of creating robust and engaging mobile apps with Native and Hybrid technologies for iOS and Android.</p>
+                    <ul>
+                        <li>iPhone App Development</li>
+                        <li>iPad App Development</li>
+                        <li>Swift App Development</li>
+                        <li>Android App Development</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/mads.png" alt="Mobile App Development">
+                </div>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of Website Development Services</h3>
+                    <p>Break away from the ordinary with our custom software development services. Become technologically superior in the industrial domain with our next-generation automated software solutions, empowering your business goals.</p>
+                    <ul>
+                        <li>PHP Development</li>
+                        <li>Laravel Development</li>
+                        <li>Node.js Development</li>
+                        <li>Cake PHP Development</li>
+                        <li>Django Web Developers</li>
+                        <li>Angular Development</li>
+                        <li>WordPress Development</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/wds.png" alt="Website Development">
+                </div>
+            </div>
+        </div>
+    
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of UI/UX Design</h3>
+                    <p>Get a noticeable digital presence with our UI/UX Designs. We turn great ideas into meaningful interfaces with superb user-centric design practices.</p>
+                    <ul>
+                        <li>Customized Web Design Services</li>
+                        <li>Interface Design for Mobile App</li>
+                        <li>Front End Development</li>
+                        <li>Web Design Services</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/uiux.png" alt="UI/UX Design">
+                </div>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of Digital Marketing Services</h3>
+                    <p>Our digital marketing services will take your brand to new heights with our extensive solutions, including SEO, SEM, and Social Media Marketing.</p>
+                    <ul>
+                        <li>Social Media Marketing</li>
+                        <li>Search Engine Optimization</li>
+                        <li>Pay Per Click Advertising</li>
+                        <li>Email Marketing</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/dms.png" alt="Digital Marketing">
+                </div>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of Emerging Technologies</h3>
+                    <p>Technologies are changing the web world. Surviving your business in this competitive world is a tough call, but not with Softuvo. We are updated and powerpacked with the emerging technologies that can help you steal the limelight in the business world.</p>
+                    <ul>
+                        <li>Bots Development</li>
+                        <li>Wearable Development</li>
+                        <li>Hybrid Development</li>
+                        <li>Ibeacon Development</li>
+                        <li>IOT App Development</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/et.png" alt="Emerging Technologies">
+                </div>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite Internet of Things</h3>
+                    <p>The Internet Of Things or IoT is the connectivity of all physical devices which are connected to the internet and are able to exchange (send and receive) data. Our experts help in establishing the connection and make the most of it for your business. Let’s unleash the technology!</p>
+                    <ul>
+                        <li>Consumer Application</li>
+                        <li>Infrastructure Management</li>
+                        <li>AR-VR Apps</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/iots.png" alt="IOT">
+                </div>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of CROSS-PLATFORM APP DEVELOPMENT</h3>
+                    <p>Cross-platform app development is the development of mobile apps that can be used on multiple mobile platforms. It helps your business to reduce upgrade costs, time-to-market and to reach more users and followers without loss of quality. Explore more!</p>
+                    <ul>
+                        <li>React Native App Development</li>
+                        <li>Flutter App Development</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/cpads.png" alt="CROSS-PLATFORM APP DEVELOPMENT">
+                </div>
+            </div>
+        </div>
+        <div class="service-card">
+            <div class="service-content">
+                <div class="content-text">
+                    <h3>Our Suite of Managed Services</h3>
+                    <p>We have your back! Our customer-centric approach has brought us where we stand today. We focus on delivering quality assured services to our clients and help them grow beyond their expectations. Our dedicated team is always ready to extend their helping hand with their constant maintenance and support.</p>
+                    <ul>
+                        <li>Quality Assurance</li>
+                        <li>Hire Resources</li>
+                        <li>Maintenance & Support</li>
+                    </ul>
+                </div>
+                <div class="content-image">
+                    <img src="icons/ms.png" alt="Managed Services">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>Tech Bridge is a trusted technology leader in web, software, and mobile app development for various industries. We are here to give you something unique curated with all the expertise we have to help you establish a solid name in the market for being the top web development company.</p>
+                <p>Our mission is to help you grow your business by overcoming technological challenges. From scratch to finish, we ensure you get constant support.</p>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#blog.html">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#casestudies.html">Case Studies</a></li>
+                    <li><a href="#industries.html">Industries</a></li>
+                    <li><a href="#emagazine.html">E-Magazine</a></li>
+                    <li><a href="#devops.html">DevOps</a></li>
+                    <li><a href="#offshorestaffing.html">Offshore Staffing</a></li>
+                    <li><a href="#outsourcing.html">Outsourcing To India</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#careers.html">Careers</a></li>
+                    <li><a href="#awards.html">Awards</a></li>
+                    <li><a href="#developers.html">Work with The Top Developers</a></li>
+                    <li><a href="#cheaperandbetter.html">Cheaper and Better</a></li>
+                    <li><a href="#howwework.html">How We Work</a></li>
+                    <li><a href="#offshoredevelopment.html">Offshore Development</a></li>
+                    <li><a href="#team.html">Our Team</a></li>
+                    <li><a href="#faq.html">FAQs</a></li>
+                    <li><a href="#contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p><i class="fas fa-phone"></i> +91 8328545782 <br> Mon-Fri 9 am to 6 pm</p>
+                <p><i class="fas fa-envelope"></i> info@techbridgeservices.in <br> Online support</p>
+                <p><i class="fas fa-map-marker-alt"></i> Whitefield Hoodi, Bangalore - 560105, Karnataka</p>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 TechBridge IT Solutions. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const serviceCards = document.querySelectorAll('.service-card');
+            const windowHeight = window.innerHeight;
+
+            const revealCards = () => {
+                serviceCards.forEach(card => {
+                    const cardTop = card.getBoundingClientRect().top;
+                    if (cardTop < windowHeight - 150) { // Adjust the offset as needed
+                        card.classList.add('visible');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', revealCards);
+            revealCards(); // Initial check in case cards are already in view
+        });
+    </script>
+</body>
+</html>

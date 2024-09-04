@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies - TechBridge IT Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <style>
+        .technologies {
+            padding: 60px 0;
+            background-color: #f8f8f8;
+        }
+ /*       .hero-section {
+    background-color: #003d7c;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+} */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #003d7c;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 50%;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.hero-image {
+    max-width: 50%;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+        .technologies h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .tech-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .tech-description {
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto 40px auto; /* Center and margin adjustment */
+        }
+
+        .tech-item {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            width: 150px; /* Adjusted width for uniform alignment */
+            height: 150px; /* Adjusted height for uniform alignment */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.6s ease, box-shadow 0.6s ease;
+        }
+
+        .tech-item img {
+            width: 64px; /* Uniform icon size */
+            height: 64px;
+            margin-bottom: 10px;
+        }
+
+        .tech-item p {
+            margin: 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        /* Hover effect */
+.tech-item:hover {
+    transform: translateY(-10px); /* Moves the item up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+}
+
+        /* Scroll-fade animation (for scrolling effect) */
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+
+        .scroll-fade.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hero-section {
+    animation: slideIn 1s ease-out;
+}
+.footer {
+    background-color: #003d7c; /* Background color */
+    color: #ffffff; /* Text color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 8px 0;
+}
+
+.footer-column ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #6abf40; /* Icon color */
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="logo11.png" alt="TechBridge Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="technologies.html">Technologies</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>Technologies</h1>
+            <p>We leverage the latest business technologies to ensure your project is delivered efficiently and effectively. Our diverse range of technology services is backed by years of experience and expertise. Come, let's explore and upgrade our technological prowess together.</p>
+            
+        </div>
+        <div class="hero-image">
+            <img src="tech-hero.png" alt="Technology Illustration">
+        </div>
+    </section>
+
+    <!-- Frontend Technologies Section -->
+    <section class="technologies scroll-fade">
+        <h2>Frontend Technologies</h2>
+        <div class="tech-container">
+            <div class="tech-item">
+                <img src="icons/js.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/ts.png" alt="TypeScript">
+                <p>TypeScript</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/html5.png" alt="HTML5">
+                <p>HTML5</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/css3.png" alt="CSS3">
+                <p>CSS3</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/angular.png" alt="Angular">
+                <p>Angular</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/react.png" alt="React.js">
+                <p>React.js</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/vue.png" alt="Vue.js">
+                <p>Vue.js</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/nextjs.png" alt="Next.js">
+                <p>Next.js</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/pwa.png" alt="PWA">
+                <p>PWA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Backend Technologies Section -->
+    <section class="technologies scroll-fade">
+        <h2>Backend Technologies</h2>
+        <div class="tech-container">
+            <div class="tech-item">
+                <img src="icons/nodejs.png" alt="Node.js">
+                <p>Node.js</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/ruby.png" alt="Ruby">
+                <p>Ruby</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/laravel.png" alt="Laravel">
+                <p>Laravel</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/php.png" alt="PHP">
+                <p>PHP</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/python.png" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/django.png" alt="Django">
+                <p>Django</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/flask.png" alt="Flask">
+                <p>Flask</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/golang.png" alt="Golang">
+                <p>Golang</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/elixir.png" alt="Elixir">
+                <p>Elixir</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App Technologies Section -->
+    <section class="technologies scroll-fade">
+        <h2>Mobile App Technologies</h2>
+        <div class="tech-container">
+            <div class="tech-item">
+                <img src="icons/android.png" alt="Android">
+                <p>Android</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/swift.png" alt="Swift">
+                <p>Swift</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/flutter.png" alt="Flutter">
+                <p>Flutter</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/react.png" alt="React Native">
+                <p>React Native</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/kotlin.png" alt="Kotlin">
+                <p>Kotlin</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/ionic.png" alt="Ionic">
+                <p>Ionic</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DevOps and Infrastructure Section -->
+    <section class="technologies scroll-fade">
+        <h2>DevOps and Infrastructure</h2>
+        <div class="tech-container">
+            <div class="tech-item">
+                <img src="icons/docker.png" alt="Docker">
+                <p>Docker</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/kubernetes.png" alt="Kubernetes">
+                <p>Kubernetes</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/aws.png" alt="AWS">
+                <p>AWS</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/azure.png" alt="Azure">
+                <p>Azure</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/jenkins.png" alt="Jenkins">
+                <p>Jenkins</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/terraform.png" alt="Terraform">
+                <p>Terraform</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/ansible.png" alt="Ansible">
+                <p>Ansible</p>
+            </div>
+            <div class="tech-item">
+                <img src="icons/chef.png" alt="Chef">
+                <p>Chef</p>
+            </div>
+        <!--    <div class="tech-item">
+                <img src="icons/pulumi.png" alt="Pulumi">
+                <p>Pulumi</p>
+            </div> -->
+        </div>
+        <!-- Quality Assurance Section -->
+    <section class="technologies scroll-fade">
+    <h2>Quality Assurance</h2>
+    <div class="tech-container">
+        <div class="tech-item">
+            <img src="icons/manual.png" alt="Manual Testing">
+            <p>Manual Testing</p>
+        </div>
+        <div class="tech-item">
+            <img src="icons/selenium.png" alt="Selenium">
+            <p>Selenium</p>
+        </div>
+        <div class="tech-item">
+            <img src="icons/softwaretesting.png" alt="Software Testing">
+            <p>Software Testing</p>
+        </div>
+    </div>
+    </section>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <p>Tech Bridge is a trusted technology leader in web, software, and mobile app development for various industries. We are here to give you something unique curated with all the expertise we have to help you establish a solid name in the market for being the top web development company.</p>
+                <p>Our mission is to help you grow your business by overcoming technological challenges. From scratch to finish, we ensure you get constant support.</p>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="#blog.html">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#casestudies.html">Case Studies</a></li>
+                    <li><a href="#industries.html">Industries</a></li>
+                    <li><a href="#emagazine.html">E-Magazine</a></li>
+                    <li><a href="#devops.html">DevOps</a></li>
+                    <li><a href="#offshorestaffing.html">Offshore Staffing</a></li>
+                    <li><a href="#outsourcing.html">Outsourcing To India</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li><a href="#careers.html">Careers</a></li>
+                    <li><a href="#awards.html">Awards</a></li>
+                    <li><a href="#developers.html">Work with The Top Developers</a></li>
+                    <li><a href="#cheaperandbetter.html">Cheaper and Better</a></li>
+                    <li><a href="#howwework.html">How We Work</a></li>
+                    <li><a href="#offshoredevelopment.html">Offshore Development</a></li>
+                    <li><a href="#team.html">Our Team</a></li>
+                    <li><a href="#faq.html">FAQs</a></li>
+                    <li><a href="#contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p><i class="fas fa-phone"></i> +91 8328545782 <br> Mon-Fri 9 am to 6 pm</p>
+                <p><i class="fas fa-envelope"></i> info@techbridgeservices.in <br> Online support</p>
+                <p><i class="fas fa-map-marker-alt"></i> Whitefield Hoodi, Bangalore - 560105, Karnataka</p>
+            </div>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 TechBridge IT Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
